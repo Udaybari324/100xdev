@@ -19,7 +19,7 @@ const adminRouter = Router();
     adminRouter.post("/", function(req, res) {
 
         res.json({
-            Message: "you are sign up"
+            Message: "you are sign up and you  can change it "
         })
     })
 // new course add ke liye put 
