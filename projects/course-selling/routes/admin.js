@@ -134,7 +134,7 @@ adminRouter.post("/", function(req, res) {
     adminRouter.get("/bulk", function(req, res) {
 
         res.json({
-            Message: "you are sign up"
+            Message: "you are sign up and can do sign "
         })
     })
 
