@@ -2,7 +2,7 @@
 const jwt = require("jsonwebtoken");
 
 // Import the JWT User Password from the config file for verification
-const { JWT_USER_PASSWORD } = require("../congif")
+const { JWT_USER_PASSWORD } = require("../config")
 
 // Define the userMiddleware function to verify the user token
 function userMiddleware(req, res, next) {

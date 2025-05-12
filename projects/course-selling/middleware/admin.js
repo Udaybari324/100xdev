@@ -2,10 +2,10 @@
 const jwt = require("jsonwebtoken");
 
 // Import the JWT User Password from the config file for verification
-const { JWT_USER_PASSWORD, JWT_ADMIN_PASSWORD } = require("../congif")
+const { JWT_ADMIN_PASSWORD } = require("../config")
 
 // Define the userMiddleware function to verify the user token
-function adminMiddlewaree(req, res, next) {
+function adminMiddleware(req, res, next) {
     // Get the token from the request headers, which is expected to be sent in the authorization header
     const token = req.headers.authorization;
 
@@ -29,5 +29,5 @@ function adminMiddlewaree(req, res, next) {
 
 // Export the userMiddleware function so that it can be used in other files
 module.exports = {
-    adminMiddlewaree //exporting the middleware for use in routes
+    adminMiddleware //exporting the middleware for use in routes
 };

@@ -146,8 +146,8 @@ const zod = require("zod");
 
      // Send the purchases and corresponding course details back to the client
         res.status(200).json({
-              purchases,
-              coursesData,
+            purchases, // Include purchase data in the response
+            coursesData, // Include course details in the response
         });     
     });
 
